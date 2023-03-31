@@ -1,0 +1,138 @@
+.button
+{
+    -fx-background-color :  #C5B0CA;
+    -fx-border-color:  #C5B0CA;
+    -fx-text-fill: #ffffff;
+}
+.button:hover
+{
+    -fx-background-color : #c7a9ce;
+    -fx-text-fill: #cecece;
+}
+.button:pressed
+{
+    -fx-background-color : #ca97d2;
+    -fx-text-fill: #919191;
+}
+
+.button2
+{
+    -fx-background-color :  transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill:  #17489c;
+}
+.button2:hover
+{
+    -fx-background-color : transparent ;
+    -fx-text-fill:   #5d7fba;
+}
+.button2:pressed
+{
+    -fx-background-color : transparent ;
+    -fx-text-fill: #a2b6d7;
+}
+
+.button3
+{
+    -fx-background-color :  transparent;
+    -fx-border-color: transparent;
+}
+.button3:hover
+{
+    -fx-background-color : rgba(93, 127, 186, 0.48);
+    -fx-border-color: transparent;
+
+}
+.button3:pressed
+{
+    -fx-background-color : rgba(93, 127, 186, 0.66);
+    -fx-border-color: transparent;
+
+}
+
+.button4
+{
+    -fx-background-color :   #977d9d;
+    -fx-border-color:   #977d9d;
+    -fx-text-fill: #ffffff;
+}
+.button4:hover
+{
+    -fx-background-color :#ac97b1;
+    -fx-text-fill: #cecece;
+}
+.button4:pressed
+{
+    -fx-background-color :#c1b1c4;
+    -fx-text-fill: #919191;
+}
+
+
+
+/*.table-view .column-header,*/
+/*.table-view .column-header-background .filler {*/
+/*    -fx-cell-size : 20;*/
+/*    -fx-background-color:   #2D75E8;*/
+/*}*/
+/*.table-view .column-header .label{*/
+
+/*    -fx-text-fill: white;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-alignment: CENTER_LEFT;*/
+/*}*/
+/*.table-view .cell{*/
+/*    -fx-cell-size: 30;*/
+/*    -fx-text-fill: #000000;*/
+/*    -fx-alignment: CENTER_LEFT;*/
+/*}*/
+
+/*.table-row-cell:selected {*/
+/*    -fx-background-color:  rgb(127, 172, 243);*/
+/*}*/
+/*.table-row-cell:selected .text {*/
+/*    -fx-fill : white ;*/
+
+/*}*/
+/*!* scroll bar starts here *!*/
+
+/*!* The increment and decrement button CSS class of scrollbar *!*/
+/*.table-view .increment-button ,.table-view .decrement-button {*/
+/*    -fx-background-color:transparent;*/
+/*    -fx-background-radius: 2em;*/
+
+/*}*/
+
+/*!* The main scrollbar **track** CSS class  *!*/
+/*.table-view .scroll-bar:horizontal .track,*/
+/*.table-view .scroll-bar:vertical .track{*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-border-color:derive(  #2D75E8,80%);*/
+/*    -fx-background-radius: 2em;*/
+/*    -fx-border-radius:2em;*/
+/*}*/
+
+/*!* The main scrollbar **thumb** CSS class which we drag every time (movable) *!*/
+/*.table-view .scroll-bar:horizontal .thumb,*/
+/*.table-view .scroll-bar:vertical .thumb {*/
+/*    -fx-background-color:derive( #2D75E8,90%);*/
+/*    -fx-background-insets: 2, 0, 0;*/
+/*    -fx-background-radius: 2em;*/
+
+/*}*/
+
+/*!* chart properties *!*/
+
+/*.chart {*/
+/*    -fx-padding: 10px;*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-legend-visible: false;*/
+/*}*/
+/*.chart-plot-background {*/
+/*    -fx-background-color:transparent;*/
+/*}*/
+
+/*.chart-pie {*/
+/*    -fx-border-color: derive(-fx-pie-color, 1%);*/
+/*    -fx-border-width: 0px;*/
+/*}*/
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #977d9d;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.social_network_3.YnmView">
+   <children>
+      <Button fx:id="usersButton" layoutY="145.0" mnemonicParsing="false" onAction="#handleShowUsers" prefHeight="44.0" prefWidth="98.0" styleClass="button4" stylesheets="@styling.css" text="Users" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-user-windows-11-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="friendsButton" layoutY="57.0" mnemonicParsing="false" onAction="#handleShowFriends" prefHeight="44.0" prefWidth="98.0" styleClass="button4" stylesheets="@styling.css" text="Friends" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-friendship-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="requestsButton" layoutY="101.0" mnemonicParsing="false" onAction="#handleShowRequests" prefHeight="44.0" prefWidth="100.0" styleClass="button4" stylesheets="@styling.css" text="Requests" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-add-friend-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="friendsTableView" layoutX="99.0" layoutY="57.0" prefHeight="554.0" prefWidth="714.0">
+        <columns>
+          <TableColumn fx:id="friendsColumn" prefWidth="397.59996032714844" text="Friends" />
+          <TableColumn fx:id="friendsDatesColumn" prefWidth="333.5999755859375" text="Dates" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="requestsTableView" layoutX="99.0" layoutY="57.0" prefHeight="554.0" prefWidth="714.0">
+         <columns>
+            <TableColumn fx:id="requestsColumn" prefWidth="397.59996032714844" text="Requests from" />
+            <TableColumn fx:id="requestsDatesColumn" prefWidth="333.5999755859375" text="Dates" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="usersTableView" layoutX="99.0" layoutY="57.0" prefHeight="554.0" prefWidth="714.0">
+         <columns>
+            <TableColumn fx:id="firstColumn" prefWidth="397.59996032714844" text="First name" />
+            <TableColumn fx:id="lastColumn" prefWidth="333.5999755859375" text="Last name" />
+            <TableColumn fx:id="usernameColumn" prefWidth="333.5999755859375" text="Username" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="284.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/icons8-found-96.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchUsersTextField" layoutX="128.0" layoutY="16.0" onAction="#handleSearchUsers" promptText="search username.." />
+      <TextField fx:id="searchFriendsTextField" layoutX="128.0" layoutY="16.0" onAction="#handleSearchFriends" promptText="search username.." />
+      <TextField fx:id="searchRequestsTextField" layoutX="128.0" layoutY="16.0" onAction="#handleSearchRequests" promptText="search username.." />
+      <Button fx:id="deleteFriendButton" layoutX="355.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="27.0" prefWidth="100.0" styleClass="button4" stylesheets="@styling.css" text="Delete" />
+      <Button fx:id="sendRequestButton" layoutX="355.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleSendRequest" prefHeight="27.0" prefWidth="100.0" styleClass="button4" stylesheets="@styling.css" text="Add" />
+      <Button fx:id="AcceptRequestButton" layoutX="355.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleAcceptRequest" prefHeight="27.0" prefWidth="100.0" styleClass="button4" stylesheets="@styling.css" text="Accept" />
+      <Button fx:id="DeclineRequestButton" layoutX="465.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleDeclineRequest" prefHeight="27.0" prefWidth="100.0" styleClass="button4" stylesheets="@styling.css" text="Decline" />
+      <ImageView fitHeight="62.0" fitWidth="72.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/jj.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="settingsButton" layoutY="512.0" mnemonicParsing="false" onAction="#handleSettings" prefHeight="44.0" prefWidth="98.0" styleClass="button4" stylesheets="@styling.css" text="Settings">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-setting-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="LogOutButton" layoutY="556.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="44.0" prefWidth="98.0" styleClass="button4" stylesheets="@styling.css" text="Log out">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-log-out-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
